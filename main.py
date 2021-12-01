@@ -21,8 +21,9 @@ from inputfile import testFraction,numberOfComponents, data_set, split_seed, pat
 
 
 ''' import the data from the .xlsx file '''
-
-df = pd.read_excel(path, sheet_name=data_set)
+data_set = data_set - 1
+#df = pd.read_excel(path, sheet_name=data_set) #Use this for .xlsx file
+df = pd.read_csv(path)
 spectraData = df.values
 
 X = spectraData[:,2:spectraData.shape[1]]
