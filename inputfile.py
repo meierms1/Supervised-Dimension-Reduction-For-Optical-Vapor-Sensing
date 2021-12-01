@@ -29,13 +29,12 @@ path: local where the .xlsx data file is stored.
 
 ''' 
 
-testFraction = 0.2
+testFraction = 0.2 # Test fraction has to be >= the number of classes. [0.3, 0.2, 0.2]
 numberOfComponents = 2
-data_set = 1 #Choose the tab you want to read from the xlsx data file [0 to 2]
+data_set = 1 #Choose the dataset [1 to 3]
 loop_size = 50 
 split_seed = 86  # [92,86,96]
 
-path =  r"/Users/maycon/Dropbox/UCCS/Clean/DATA.xlsx"
-
+path = r"Dataset%d.csv"%data_set
 
 
