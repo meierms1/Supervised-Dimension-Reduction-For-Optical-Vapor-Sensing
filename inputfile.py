@@ -6,7 +6,8 @@
 
 
 testFraction: This variable is used to set the amount of test points when using 
-            sklearn split function;
+            sklearn split function; Dataset 1 requires a minimum of 30% test points;
+            Datasets 2 and 3 can run with 20% test points.
 
 numberOfComponents: The number of components returned from the dimension reduction 
             methods and the dimension of the plots. If it is set to a value higher
@@ -15,9 +16,9 @@ numberOfComponents: The number of components returned from the dimension reducti
             Note: Number of components for LDA is limited to n-1, where n is the
             number of classes in the data set.
              
-data_set: Assign 0 for Data-set 1; 
-          Assign 1 for data-set 2; 
-          Assign 2 for data-set 3.
+data_set: Assign 1 for Data-set 1; 
+          Assign 2 for data-set 2; 
+          Assign 3 for data-set 3.
           
 loop_size: Number of random seed interaction for the KNN Accuracy Analysis code.
     
@@ -25,7 +26,8 @@ split_seed: to allow reproducibility of the results, the split data can be
             controlled with a non-random seed.
 
 
-path: local where the .xlsx data file is stored. 
+path: local where the .csv data file is stored. To run the .xlsx file instead of 
+      the .csv file, comment line 26 in the main.py file. 
 
 ''' 
 
